@@ -1,48 +1,167 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Welcome to Trustworthy AI Lab</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-      background: linear-gradient(to right, #2c3e50, #4ca1af);
-      color: white;
-      text-align: center;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      height: 100vh;
-    }
-    h1 {
-      font-size: 3em;
-      margin-bottom: 0.2em;
-    }
-    p {
-      font-size: 1.5em;
-      margin-top: 0;
-    }
-    .btn {
-      margin-top: 30px;
-      padding: 12px 24px;
-      background-color: #ffffff;
-      color: #2c3e50;
-      border: none;
-      border-radius: 5px;
-      font-size: 1em;
-      cursor: pointer;
-      transition: background-color 0.3s;
-    }
-    .btn:hover {
-      background-color: #e0e0e0;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trustworthy Intelligence Lab</title>
+    <link rel="stylesheet" href="style/styles.css">
 </head>
 <body>
-  <h1>Welcome to the Trustworthy AI Lab</h1>
-  <p>Advancing safe, secure, and reliable artificial intelligence</p>
-  <button class="btn" onclick="location.href='about.html'">Learn More</button>
+    <header>
+        <nav class="container">
+            <a href="#home" class="logo">TI Lab</a>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="team.html">Team</a></li>
+                <li><a href="publications.html">Publications</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><button class="theme-toggle" onclick="toggleTheme()">🌙 Dark Mode</button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="container">
+                <h1>Trustworthy Intelligence Lab</h1>
+                <p>Advancing safe, secure, and reliable intelligence through cutting-edge computer vision research</p>
+                <a href="#projects" class="cta-button">Explore Our Research</a>
+            </div>
+        </section>
+
+        <section id="about" class="about">
+            <div class="container">
+                <h2>Our Mission</h2>
+                <div class="about-content">
+                    <div class="about-card">
+                        <h3>🔍 Research Focus</h3>
+                        <p>We specialize in developing trustworthy AI systems with a focus on computer vision, ensuring our technologies are robust, interpretable, and ethically sound.</p>
+                    </div>
+                    <div class="about-card">
+                        <h3>🛡️ Safety & Security</h3>
+                        <p>Our work emphasizes creating AI systems that are secure against adversarial attacks and maintain high safety standards in real-world applications.</p>
+                    </div>
+                    <div class="about-card">
+                        <h3>🤝 Collaboration</h3>
+                        <p>We foster collaborative research with academia and industry partners to translate theoretical advances into practical solutions.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="projects">
+            <div class="container">
+                <h2>Featured Projects</h2>
+                <div class="project-grid">
+                    <div class="project-card">
+                        <div class="project-header">
+                            <div class="project-icon">🧠</div>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Adversarial Robustness Framework</h3>
+                            <p class="project-description">A comprehensive framework for evaluating and improving the robustness of computer vision models against adversarial attacks.</p>
+                            <div class="project-tags">
+                                <span class="tag">PyTorch</span>
+                                <span class="tag">Computer Vision</span>
+                                <span class="tag">Security</span>
+                            </div>
+                            <a href="#" class="project-link">Learn More →</a>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-header">
+                            <div class="project-icon">👁️</div>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Interpretable Vision Models</h3>
+                            <p class="project-description">Developing explainable AI techniques to make computer vision models more interpretable and trustworthy for critical applications.</p>
+                            <div class="project-tags">
+                                <span class="tag">XAI</span>
+                                <span class="tag">Interpretability</span>
+                                <span class="tag">Deep Learning</span>
+                            </div>
+                            <a href="#" class="project-link">Learn More →</a>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-header">
+                            <div class="project-icon">🔒</div>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Privacy-Preserving AI</h3>
+                            <p class="project-description">Research on federated learning and differential privacy techniques for training vision models while protecting sensitive data.</p>
+                            <div class="project-tags">
+                                <span class="tag">Privacy</span>
+                                <span class="tag">Federated Learning</span>
+                                <span class="tag">Medical AI</span>
+                            </div>
+                            <a href="#" class="project-link">Learn More →</a>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-header">
+                            <div class="project-icon">🎯</div>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Fair AI Systems</h3>
+                            <p class="project-description">Developing methods to detect and mitigate bias in computer vision systems to ensure fair and equitable AI applications.</p>
+                            <div class="project-tags">
+                                <span class="tag">Fairness</span>
+                                <span class="tag">Bias Detection</span>
+                                <span class="tag">Ethics</span>
+                            </div>
+                            <a href="#" class="project-link">Learn More →</a>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-header">
+                            <div class="project-icon">⚡</div>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Efficient Vision Transformers</h3>
+                            <p class="project-description">Optimizing vision transformer architectures for real-time applications while maintaining accuracy and trustworthiness.</p>
+                            <div class="project-tags">
+                                <span class="tag">Transformers</span>
+                                <span class="tag">Optimization</span>
+                                <span class="tag">Real-time</span>
+                            </div>
+                            <a href="#" class="project-link">Learn More →</a>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-header">
+                            <div class="project-icon">🏥</div>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Medical Image Analysis</h3>
+                            <p class="project-description">Applying trustworthy AI techniques to medical imaging for reliable diagnosis and treatment planning in healthcare settings.</p>
+                            <div class="project-tags">
+                                <span class="tag">Medical AI</span>
+                                <span class="tag">Imaging</span>
+                                <span class="tag">Healthcare</span>
+                            </div>
+                            <a href="#" class="project-link">Learn More →</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="contact">
+        <div class="container">
+            <p>&copy; 2025 Trustworthy Intelligence Lab. All rights reserved.</p>
+            <p>Advancing the future of trustworthy intelligence</p>
+        </div>
+    </footer>
+
+    <script src="style/script.js"></script>
 </body>
 </html>
